@@ -1,0 +1,48 @@
+1. Understand Array Representation
+
+Q.Explain how Arrays Are Represented in Memory and Their Advantages?
+Ans.
+Representation=>
+1.Contiguous Memory Allocation:
+Arrays are stored in contiguous memory locations. This means that all elements of the array are placed sequentially in a block of memory.
+For example, if an array of integers is declared, the entire array is allocated a single contiguous block of memory where each integer element is placed one after another.
+2.Index-Based Access:
+Arrays support direct access to elements using an index. The index of an element is used to calculate its memory address.
+Advantages=>
+
+1.Constant Time Access:
+Arrays provide constant time 
+𝑂(1) access to elements by index. This is because the address of any element can be calculated directly from its index.
+2.Simplicity:
+Arrays are simple to implement and understand. They offer a straightforward way to store and manipulate a fixed-size collection of elements.
+3.Memory Efficiency:
+Since arrays allocate memory in a contiguous block, they can be more memory efficient compared to other data structures that require additional overhead for pointers or links.
+4.Ease of Use:
+Arrays provide a fixed-size structure that is easy to manage and use. Operations such as iterating over elements are straightforward.
+5.Simple Allocation:
+The allocation of arrays is usually straightforward and fast. Many programming languages offer built-in support for array allocation and management.
+
+
+
+4. Analysis
+
+Q.Analyze the time complexity of each operation (add, search, traverse, delete)?
+
+Ans.
+Time Complexity of Each Operation are:
+1.Add Employee: O(1) - Adding an employee is a constant-time operation as long as there is space in the array.
+2.Search Employee: O(n) - Linear search through the array is required, making the time complexity proportional to the number of employees.
+3.Traverse Employees: O(n) - Traversing the array to print each employee takes linear time.
+4.Delete Employee: O(n) - Deleting an employee requires shifting elements in the array, resulting in linear time complexity.
+
+Q.Discuss the limitations of arrays and when to use them?
+
+Ans.
+1.Fixed Size: Arrays have a fixed size, which means you must allocate enough space at creation time. This can lead to wasted memory if the array is not fully utilized or the need for resizing operations if the array becomes full.
+2.Inefficient Deletion: Deleting an element from an array requires shifting elements, which is inefficient for large arrays.
+3.Poor Insertion Performance: Inserting an element at any position other than the end requires shifting elements, which can be inefficient.
+
+Arrays should be used=>
+1.When Fixed Size Is Known: Arrays are suitable when the number of elements is known in advance and does not change frequently.
+2.When Fast Access Is Needed: Arrays are ideal for scenarios where quick access to elements by index is required.
+3.When Memory Contiguity Is Beneficial: Arrays are useful when you need memory-efficient storage and good cache performance.
